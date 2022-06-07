@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> TRIVIA </title>
+  <link href="trivia.css" rel="stylesheet" type="text/css" />
+  <header>
+    <h1>JUEGO DE PREGUNTAS</h1>
+    <p>Místico e intergaláctico</p>
+  </header>
+</head>
+<body>
+  <p> 
+    <br> ¿Cuál es tu nombre? <br/>
+   <input type="text" id="texto_nombre"/>
+     <input type="button" value="continuar" id="botoncito"/>
+      </p> 
+
+
+  <div class="container">
+<section id="p0">
+  <h3> 1 - ¿Qué raza es Chewbacca?</h3>
+  <label> 
+    <input type="radio" value="1" name="p0" onClick="respuesta(0,this)"> Ewok
+  </label>
+  <label> 
+    <input type="radio" value="2" name="p0" onClick="respuesta(0,this)"> Chewbacca
+  </label>
+  <label> 
+    <input type="radio" value="3" name="p0" onClick="respuesta(0,this)"> Wookiee
+  </label>
+</section>
+
+<section id="p1">
+  <h3> 2 - ¿Quién es el bastardo de los siete reinos?</h3>
+  <label> 
+    <input type="radio" value="1" name="p1" onClick="respuesta(1,this)"> Han Solo
+  </label>
+  <label> 
+    <input type="radio" value="2" name="p1" onClick="respuesta(1,this)"> Jon Snow
+  </label>
+  <label> 
+    <input type="radio" value="3" name="p1" onClick="respuesta(1,this)"> Tyrion Lannister
+  </label>
+</section>
+
+<section id="p2">
+  <h3> 3 - ¿Quién es este personaje?</h3>
+  <label> 
+    <input type="radio" value="1" name="p2" onClick="respuesta(2,this)"> Elon Musk
+  </label>
+  <label> 
+    <input type="radio" value="2" name="p2" onClick="respuesta(2,this)"> Darth Vader
+  </label>
+  <label> 
+    <input type="radio" value="3" name="p2" onClick="respuesta(2,this)"> Luke Skywalker
+  </label>
+</section>
+
+<section id="p3">
+  <h3> 4 - ¿Quién es la Khaleesi de los Dotraki?</h3>
+  <label> 
+    <input type="radio" value="1" name="p3" onClick="respuesta(3,this)"> Sansa Stark
+  </label>
+  <label> 
+    <input type="radio" value="2" name="p3" onClick="respuesta(3,this)"> Daenerys Targaryen
+  </label>
+  <label> 
+    <input type="radio" value="3" name="p3" onClick="respuesta(3,this)"> Selena Gomez
+  </label>
+</section>
+<button onclick="corregir()">CORREGIR</button>
+<h2>Preguntas acertadas: <span id="resultado"</span> </h2>
+  </div>
+     <script src="triviota.js"></script>
+
+     
+</body>
+</html>
